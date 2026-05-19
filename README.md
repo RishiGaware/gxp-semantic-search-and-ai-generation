@@ -3,7 +3,7 @@
 An end-to-end, intelligent enterprise solution for Pharmaceutical and Life Sciences Quality Management Systems (QMS). This platform combines advanced semantic retrieval and Generative AI to streamline quality investigations, ensure regulatory compliance, and assist QA/QC professionals in writing audit-ready reports.
 
 ---
-
+ 
 ## 🚀 Key Use Cases
 
 ### 1. Deviation Investigation & Analysis (DVMS)
