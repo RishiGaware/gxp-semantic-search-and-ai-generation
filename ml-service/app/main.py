@@ -10,6 +10,7 @@ load_dotenv()
 from app.domains.common.router import router as common_router
 from app.domains.dvms.api.router import router as dvms_router
 from app.domains.oos.api.router import router as oos_router
+from app.domains.eams.api.router import router as eams_router
 from app.core.response_handler import standard_response
 
 app = FastAPI(title="Universal ML Service Core")
@@ -43,6 +44,13 @@ app.include_router(
     oos_router, 
     prefix="/ml-service/oos", 
     tags=["oos"]
+)
+
+# Mounting EAMS Domain
+app.include_router(
+    eams_router,
+    prefix="/ml-service/eams",
+    tags=["eams"]
 )
 
 # --- Global Endpoints ---
